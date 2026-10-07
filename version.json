@@ -5,5 +5,5 @@
     "msi": "https://github.com/ndova/vocalyx-releases/releases/download/v0.1.0-beta/VocaLyx_0.1.0-beta_x64_en-US.msi"
   },
   "url": "https://github.com/ndova/vocalyx-releases/releases/download/v0.1.0-beta/VocaLyx_0.1.0-beta_x64-setup.exe",
-  "notes": "Login Spotify kini tanpa username/password (Spotify menonaktifkan password login bagi aplikasi pihak ketiga): pakai Connect lalu Verify Connection; kredensial lama dibersihkan otomatis. Perbaikan hang saat Connect/Test (proses auth kini keluar bersih + log connect-last.log). Karaoke: pemisah vokal otomatis memilih interpreter Python yang lengkap (audio_separator) bila ada lebih dari satu. Deskripsi About diringkas. Versi diturunkan ke 0.1.0-beta: unduh ulang installer bila sudah memasang rilis sebelumnya."
+  "notes": "Installer full (±700 MB) dengan runtime Python terbundel — pasang langsung jalan, tanpa unduhan tambahan; model AI diunduh otomatis saat dipakai, CUDA opsional lewat Settings. Isi rilis: login Spotify tanpa username/password (Connect + Verify Connection), perbaikan hang saat Connect, karaoke otomatis memilih interpreter Python lengkap, EQ 10-band, lirik sinkron, transfer iPhone dua arah. Pembaruan berikutnya memakai installer kecil (runtime dipakai ulang)."
 }
