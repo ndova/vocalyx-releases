@@ -66,33 +66,6 @@ your iPhone. Built with **Tauri (frontend) + Python (audio engine)** by
    Settings.
 
 <details>
-<summary><b>Run from source (development)</b></summary>
-
-Requires: Node 18+, Python 3.10/3.11, Rust (for `.exe`).
-
-```powershell
-npm install
-npm run dev:all        # frontend + engine together
-# or: npm run dev  +  npm run engine  (two terminals)
-```
-
-</details>
-
-<details>
-<summary><b>Build a release</b></summary>
-
-```powershell
-npm test                                        # smoke + Python tests (must be green)
-python scripts/build_runtime.py --repack        # runtime-bundle.zip + dist-runtime/
-npx tauri build                                 # MSI + NSIS under src-tauri/target/release/bundle/
-```
-
-`npm run stage:engine` runs automatically inside `npx tauri build`
-(`beforeBuildCommand`) — a stale stage would ship old engine code.
-
-</details>
-
-<details>
 <summary><b>Disclaimer</b></summary>
 
 - VocaLyx is an independent project, **not affiliated with, endorsed by, or sponsored
