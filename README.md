@@ -159,33 +159,6 @@ iPhone Anda. Dibangun dengan **Tauri (frontend) + Python (audio engine)** oleh
    Settings.
 
 <details>
-<summary><b>Jalankan dari source (pengembangan)</b></summary>
-
-Butuh: Node 18+, Python 3.10/3.11, Rust (untuk `.exe`).
-
-```powershell
-npm install
-npm run dev:all        # frontend + engine sekaligus
-# atau: npm run dev  +  npm run engine  (dua terminal)
-```
-
-</details>
-
-<details>
-<summary><b>Bangun rilis</b></summary>
-
-```powershell
-npm test                                        # smoke + test Python (wajib hijau)
-python scripts/build_runtime.py --repack        # runtime-bundle.zip + dist-runtime/
-npx tauri build                                 # MSI + NSIS di src-tauri/target/release/bundle/
-```
-
-`npm run stage:engine` berjalan otomatis di dalam `npx tauri build`
-(`beforeBuildCommand`) — stage basi akan mengirim kode engine lama.
-
-</details>
-
-<details>
 <summary><b>Disclaimer</b></summary>
 
 - VocaLyx adalah proyek independen, **tidak berafiliasi, didukung, atau disponsori oleh**
