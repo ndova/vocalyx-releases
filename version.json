@@ -1,0 +1,9 @@
+{
+  "downloads": {
+    "msi": "https://github.com/ndova/vocalyx-releases/releases/download/v0.1.0-beta/VocaLyx_0.1.0-beta_x64_en-US.msi",
+    "setup": "https://github.com/ndova/vocalyx-releases/releases/download/v0.1.0-beta/VocaLyx_0.1.0-beta_x64-setup.exe"
+  },
+  "notes": "Installer full (±700 MB) dengan runtime Python terbundel — pasang langsung jalan, tanpa unduhan tambahan; model AI diunduh otomatis saat dipakai, CUDA opsional lewat Settings. Perbaikan: (1) MSVC Runtime tak lengkap ikut terdeteksi (registry sempat melaporkan terpasang padahal vcruntime140_threads.dll hilang); bila install tidak melengkapi, installer bawaan dijalankan ulang dengan /repair; (2) VC Redist benar-benar terpasang otomatis + banner satu klik; (3) unduhan CUDA jujur (byte asli meter pip, label MB, peringatan stall, watchdog bunuh+retry otomatis); (4) wheel torch via curl IPv4 resume (tahan rute flaky) dengan fallback pip; (5) cover iPhone tanpa scroll; (6) Disconnect Spotify benar-benar terputus; (7) item karaoke di menu Local Music. Isi rilis: login Spotify tanpa username/password, EQ 10-band, lirik sinkron, transfer iPhone dua arah. PENTING: bila 0.1.1-beta terpasang, uninstall dulu sebelum memasang MSI ini (Windows menolak downgrade MSI).",
+  "url": "https://github.com/ndova/vocalyx-releases/releases/download/v0.1.0-beta/VocaLyx_0.1.0-beta_x64-setup.exe",
+  "version": "0.1.0-beta"
+}
